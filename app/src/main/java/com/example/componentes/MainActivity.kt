@@ -28,6 +28,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button_snack ->{
                 val snack = Snackbar.make(linear_root, getString(R.string.snack), Snackbar.LENGTH_SHORT)
                 snack.show()
+
+                //colocar evento de click na snackbar
+                snack.setAction(getString(R.string.desfazer), View.OnClickListener {
+                    toast(getString(R.string.desfeito))
+                })
             }
         }
     }

@@ -4,4 +4,6 @@
     <string name="minha_toast_customizada">Minha toast customizada</string>
     <string name="snack_me">Snack me</string>
     <string name="snack">Snack</string>
+    <string name="desfazer">Desfazer</string>
+    <string name="desfeito">Desfeito!</string>
 </resources>

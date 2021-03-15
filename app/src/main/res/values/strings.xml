@@ -15,6 +15,8 @@
     <string name="track_started">O usuário começou a arrastar</string>
     <string name="track_stoped">O usuário parou de arrastar</string>
     <string name="on_off">On / Off</string>
+    <string name="radio_on">Radio on</string>
+    <string name="radio_off">Radio off</string>
 
     <string-array name="spinner_values">
         <item>Gramas</item>

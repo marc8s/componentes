@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
         seekbar.setOnSeekBarChangeListener(this)
         switch_on_off.setOnCheckedChangeListener(this)
         check_on_off.setOnCheckedChangeListener(this)
+        radio_on.setOnCheckedChangeListener(this)
+        radio_off.setOnCheckedChangeListener(this)
 
         loadSpinner()
     }
@@ -102,11 +104,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
     override fun onCheckedChanged(buttonView: CompoundButton, isChecked: Boolean) {
         when(buttonView.id){
             R.id.switch_on_off ->{
-                toast("Switch ${if (isChecked) "Ligado" else "Desligado"}")
+                toast("Switch: ${if (isChecked) "Ligado" else "Desligado"}")
             }
             R.id.check_on_off ->{
-                toast("Checkbox ${if (isChecked) "On" else "Off"}")
+                toast("Checkbox: ${if (isChecked) "On" else "Off"}")
             }
+            R.id.radio_on ->{
+                toast("Radio on: ${if (isChecked) "On" else "Off"}")
+            }
+            R.id.radio_off ->{
+                toast("Radio off: ${if (isChecked) "On" else "Off"}")
+            }
+
         }
     }
 }

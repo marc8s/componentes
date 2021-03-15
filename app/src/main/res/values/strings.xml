@@ -6,4 +6,11 @@
     <string name="snack">Snack</string>
     <string name="desfazer">Desfazer</string>
     <string name="desfeito">Desfeito!</string>
+
+    <string-array name="spinner_values">
+        <item>Gramas</item>
+        <item>Kg</item>
+        <item>Arroba</item>
+        <item>Toneladas</item>
+    </string-array>
 </resources>

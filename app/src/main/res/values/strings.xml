@@ -9,6 +9,11 @@
     <string name="atribuir_spinner">Atribuir spinner</string>
     <string name="obter_spinner">Obter spinner</string>
     <string name="nada_selecionado">Nada selecionado</string>
+    <string name="valor_seekbar">Valor seekbar</string>
+    <string name="obter_seekbar">Obter seekbar</string>
+    <string name="atribuir_seekbar">Atribuir seekbar</string>
+    <string name="track_started">O usuário começou a arrastar</string>
+    <string name="track_stoped">O usuário parou de arrastar</string>
 
     <string-array name="spinner_values">
         <item>Gramas</item>

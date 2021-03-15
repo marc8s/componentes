@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Componentes</string>
     <string name="toast_me">Toast me</string>
+    <string name="minha_toast_customizada">Minha toast customizada</string>
+    <string name="snack_me">Snack me</string>
+    <string name="snack">Snack</string>
 </resources>

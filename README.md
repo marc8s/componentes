@@ -1,6 +1,6 @@
 ﻿# Componentes
 
-Aplicativo simples com aplicação de vários componentes numa tela
+Aplicativo simples com vários componentes numa tela associados a eventos
 1) Toast
 2) Snackbar
 3) Spinner estatico

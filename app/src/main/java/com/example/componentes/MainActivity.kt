@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
         spinner_static.onItemSelectedListener = this
         seekbar.setOnSeekBarChangeListener(this)
         switch_on_off.setOnCheckedChangeListener(this)
+        check_on_off.setOnCheckedChangeListener(this)
 
         loadSpinner()
     }
@@ -102,6 +103,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
         when(buttonView.id){
             R.id.switch_on_off ->{
                 toast("Switch ${if (isChecked) "Ligado" else "Desligado"}")
+            }
+            R.id.check_on_off ->{
+                toast("Checkbox ${if (isChecked) "On" else "Off"}")
             }
         }
     }

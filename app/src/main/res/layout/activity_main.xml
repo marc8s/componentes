@@ -102,4 +102,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"/>
 
+    <CheckBox
+        android:id="@+id/check_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/on_off"/>
+
 </LinearLayout>

@@ -18,6 +18,7 @@
     <string name="radio_on">Radio on</string>
     <string name="radio_off">Radio off</string>
     <string name="datepicker">Datepicker</string>
+    <string name="timepicker">Timepicker</string>
 
     <string-array name="spinner_values">
         <item>Gramas</item>

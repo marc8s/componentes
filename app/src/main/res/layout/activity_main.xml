@@ -137,12 +137,30 @@
 
     </RadioGroup>
 
-    <Button
-        android:id="@+id/button_date"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linear_button_date_time"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/datepicker"/>
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/datepicker"/>
+
+        <Button
+            android:id="@+id/button_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/timepicker"/>
+
+    </LinearLayout>
+
+
 
 
 </LinearLayout>

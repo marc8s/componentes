@@ -6,6 +6,9 @@
     <string name="snack">Snack</string>
     <string name="desfazer">Desfazer</string>
     <string name="desfeito">Desfeito!</string>
+    <string name="atribuir_spinner">Atribuir spinner</string>
+    <string name="obter_spinner">Obter spinner</string>
+    <string name="nada_selecionado">Nada selecionado</string>
 
     <string-array name="spinner_values">
         <item>Gramas</item>

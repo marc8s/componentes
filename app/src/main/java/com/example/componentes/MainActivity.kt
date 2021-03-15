@@ -71,7 +71,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
                 seekbar.progress = 15
             }
             R.id.button_date ->{
-                DatePickerDialog(this, this, 2020, 1, 1).show()
+                val calendar = Calendar.getInstance()
+                val day = calendar.get(Calendar.DAY_OF_MONTH)
+                val month = calendar.get(Calendar.MONTH)
+                val year = calendar.get(Calendar.YEAR)
+                DatePickerDialog(this, this, year, month, day).show()
             }
 
         }

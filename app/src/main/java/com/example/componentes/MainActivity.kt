@@ -1,5 +1,6 @@
 package com.example.componentes
 
+import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -7,9 +8,15 @@ import android.widget.*
 import com.google.android.material.snackbar.Snackbar
 
 import kotlinx.android.synthetic.main.activity_main.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnItemSelectedListener,
-    SeekBar.OnSeekBarChangeListener, CompoundButton.OnCheckedChangeListener {
+    SeekBar.OnSeekBarChangeListener, CompoundButton.OnCheckedChangeListener,
+    DatePickerDialog.OnDateSetListener {
+
+    private val mSimpleDate = SimpleDateFormat("dd/MM/yyyy")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,6 +27,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
         button_get_spinner.setOnClickListener(this)
         button_set_seekbar.setOnClickListener(this)
         button_get_seekbar.setOnClickListener(this)
+        button_date.setOnClickListener(this)
 
         spinner_static.onItemSelectedListener = this
         seekbar.setOnSeekBarChangeListener(this)
@@ -61,6 +69,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
             }
             R.id.button_set_seekbar ->{
                 seekbar.progress = 15
+            }
+            R.id.button_date ->{
+                DatePickerDialog(this, this, 2020, 1, 1).show()
             }
 
         }
@@ -117,5 +128,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, AdapterView.OnIt
             }
 
         }
+    }
+
+    override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
+        val date = Calendar.getInstance()
+        date.set(year, month, dayOfMonth)
+
+        button_date.text = mSimpleDate.format(date.time)
     }
 }
